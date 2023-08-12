@@ -1,0 +1,23 @@
+/* ========= GooGle font =========  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/* ========= variable  css =========  */
+
+:root {
+  /* === colors ===   */
+  --primary-color: #000;
+  --secondary-color: #fff;
+
+  /* === font === */
+  --font-family: "Poppins", sans-serif;
+}
+
+/* ========= Base ========= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}

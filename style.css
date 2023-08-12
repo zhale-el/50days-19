@@ -83,3 +83,20 @@ body {
   left: 50%;
   transform-origin: bottom center;
 }
+/* === hour=== */
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+}
+
+/* === minut=== */
+.needle.minut {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+}
+
+/* === second=== */
+.needle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+  background-color: #e74c3c;
+}

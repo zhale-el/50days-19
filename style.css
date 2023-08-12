@@ -10,7 +10,7 @@
   --secondary-color: #fff;
 
   /* === font === */
-  --font-family: "Poppins", sans-serif;
+  --body-font-family: "Poppins", sans-serif;
 }
 
 /* ========= Base ========= */
@@ -20,4 +20,12 @@
   padding: 0;
   box-sizing: border-box;
   text-transform: capitalize;
+}
+body {
+  font-family: var(--body-font-family);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
 }

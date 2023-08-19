@@ -81,6 +81,7 @@ body {
   top: 50%;
   left: 50%;
   transform-origin: bottom center;
+  transition: all 0.5s ease-in;
 }
 /* === hour=== */
 .needle.hour {
@@ -88,7 +89,7 @@ body {
 }
 
 /* === minut=== */
-.needle.minut {
+.needle.minute {
   transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
 }

@@ -53,11 +53,14 @@ function setTime() {
   const time = new Date();
   const month = time.getMonth();
   const day = time.getDay();
-  const hour = time.getHours();
-  const hoursForClock = hour % 12;
+  const date = time.getDate();
+  const hours = time.getHours();
+  const hoursForClock = hours % 12;
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
+  const ampm = hours >= 12 ? "PM" : "AM";
 
+  // time
   hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(
     hoursForClock,
     0,
@@ -79,6 +82,14 @@ function setTime() {
     0,
     360
   )}deg)`;
+
+  // Date
+  timeEl.innerHTML = `${hoursForClock}:${
+    minutes < 10 ? `0${minutes}` : minutes
+  } ${ampm}`;
+
+  dateEl.innerHTML = `${days[day]}, ${months[month]}
+  <span class='circle'>${date}</span>`;
 }
 
 setTime();
